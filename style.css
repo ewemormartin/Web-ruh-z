@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "h h h "
+    "a a as "
+    "f f f  ";
+  gap: 10px;
+}
+
+header,
+nav,
+article,
+footer,
+aside {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+header {
+  grid-area: h;
+}
+nav {
+  grid-area: n;
+  background-color: aqua;
+}
+article {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gray;
+  border: double;
+}
+aside {
+  grid-area: as;
+  background-color: gray;
+}
+footer {
+  grid-area: f;
+}
+header {
+  background-color: gray;
+}
+.termek {
+  border: double;
+  margin: auto;
+  width: 350px;
+  border: dotted;
+  margin: auto;
+  background-color: white;
+  
+}
+
+body {
+  max-width: 100%;
+  
+}
+.valami{
+    
+}
+.gomb {
+  background-color: gray;
+  color: black;
+  border: 2px solid;
+  width: 80px;
+  margin: left;
+  font-style: initial;
+  font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .left,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
